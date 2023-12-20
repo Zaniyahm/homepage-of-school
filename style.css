@@ -1,0 +1,94 @@
+/* General setup */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px; 
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Layout */
+  section, aside, nav {
+    width: 100%; 
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+    text-align: center;
+  }
+  
+  /* Fonts */
+  h1, h2 {
+    letter-spacing: 2px;
+  }
+  
+  p {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-indent: 20px;
+  }
+  
+  /* Links */
+  a, a:visited, a:focus {
+    text-decoration: none;
+    color: #a66;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: #ff0000;
+  }
+  
+  /* External Links */
+  a.external:after {
+    content: " \2197";
+  }
+  
+  /* Lists */
+  ul, ol {
+    padding-left: 20px;
+    line-height: 1.5;
+  }
+  
+  li {
+    list-style-type: disc;
+  }
+  
+  /* Responsive layout adjustments */
+  @media screen and (min-width: 600px) {
+    /* For screens wider than 600px, adjust the layout of the columns */
+    section {
+      float: left;
+      width: 50%;
+    }
+  
+    aside {
+      float: left;
+      width: 30%;
+    }
+  
+    nav {
+      float: left;
+      width: 20%;
+      height: 100%;
+    }
+  
+    footer {
+      clear: both;
+    }
+  }
+
+  
